@@ -4,12 +4,10 @@ import { findByTestAttr } from '../../../utils/index';
 import Header from './index';
 
 const setup = (props={}) => {
-    const component = shallow(<Header {...props}/>);
-    return component;
+    return shallow(<Header {...props}/>);
 };
 
 describe('Header component', () => {
-
     let component;
     beforeEach(() => {
         component = setup();
